@@ -1,3 +1,4 @@
+import GestorDeLibros.LibroDigital;
 import GestorDeLibros.Libros;
 import GestorDeLibros.Pedido;
 //Se importa la clase Scanner del paquete java.util para permitir la entrada de datos desde la consola.
@@ -10,11 +11,13 @@ public class Main {
         Libros libro1 = new Libros("Java for Beginners", 29.99, 10);
         Libros libro2 = new Libros("Data Structures in Java", 39.99, 5);
         Libros libro3 = new Libros("Introduction to Algorithms", 49.99, 8);
+        LibroDigital libroDigital= new LibroDigital("Java for trainee", 08.99, 7, "Digital");
+
 
         libro1.setTitulo("Java for Beginners Junior");
 
         // Crear un array de libros
-        Libros[] inventario = {libro1, libro2, libro3};
+        Libros[] inventario = {libro1, libro2, libro3, libroDigital};
 
         // Mostrar información inicial del inventario
         System.out.println("Inventario inicial:");
