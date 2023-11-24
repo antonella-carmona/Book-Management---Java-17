@@ -9,7 +9,7 @@ public class Libros {
     private double precio;
     private int stock;
     //_______________________________________________________
-    //Generamos un constructor con las propiedades
+    //constructor para instanciar por fuera
 
     public Libros(String titulo, double precio, int stock) {
 
@@ -18,10 +18,9 @@ public class Libros {
         this.stock = stock;
     }
     //_______________________________________________________
-    //métodos de acceso" o "getters".
+    //métodos de acceso :"getters".
     //usado para poder obtener el valor desde afuera de esta clase.
-    //siguen el principio de encapsulamiento, implica ocultar detalles internos de una class y proporcionar
-    //interfaces como estos metodos get para interactuar con ells.
+
     public String getTitulo() {
         return titulo;
     }
@@ -33,8 +32,11 @@ public class Libros {
     public int getStock() {
         return stock;
     }
+
+    public void setTitulo(String nuevoTitulo){ this.titulo = nuevoTitulo;}
   //_______________________________________________________
-  public void mostrarInformacion() {
+  // void, significa que el método no devuelve ningún valor.
+    public void mostrarInformacion() {
       System.out.println("Libro: " + titulo);
       System.out.println("Precio: $" + precio);
       System.out.println("Stock disponible: " + stock);

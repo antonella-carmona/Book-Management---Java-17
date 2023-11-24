@@ -11,6 +11,8 @@ public class Main {
         Libros libro2 = new Libros("Data Structures in Java", 39.99, 5);
         Libros libro3 = new Libros("Introduction to Algorithms", 49.99, 8);
 
+        libro1.setTitulo("Java for Beginners Junior");
+
         // Crear un array de libros
         Libros[] inventario = {libro1, libro2, libro3};
 
